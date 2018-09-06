@@ -1,2 +1,3 @@
-# salt-formula-modules
-Salt Stack Formula to configure/enable/disable kernel modules based on pillar
+# salt-formula-kmods
+
+Salt Stack Formula to configure/enable/disable Linux kernel modules based on pillar
