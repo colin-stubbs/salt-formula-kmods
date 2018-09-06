@@ -1,0 +1,13 @@
+{% set kmods_map = salt['grains.filter_by']({
+  'default': {
+    'lookup': {
+      'locations': {
+        'modprobe_d': '/etc/modprobe.d'
+      }
+    },
+    'enable': {},
+    'blacklist': []
+  },
+},
+merge=salt['pillar.get']('kmods', {}), default='default')
+%}
