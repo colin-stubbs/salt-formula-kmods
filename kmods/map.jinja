@@ -1,6 +1,7 @@
 {% set kmods_map = salt['grains.filter_by']({
   'default': {
     'lookup': {
+      'packages': [ 'kmod' ],
       'locations': {
         'modprobe_d': '/etc/modprobe.d'
       }
