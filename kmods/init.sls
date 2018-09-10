@@ -30,6 +30,11 @@ kmod-{{ kmod_name }}-blacklist:
     - user: root
     - group: root
     - mode: 0640
+
+kmod-{{ kmod_name }}-unload:
+  kmod.absent:
+    - name: {{ kmod_name }}
+
 {% endfor %}
 
 {# EOF #}
